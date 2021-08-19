@@ -1,0 +1,27 @@
+import { vec } from '@basementuniverse/commonjs';
+declare type CompositeOperation = 'source-over' | 'lighter' | 'multiply' | 'screen' | 'overlay' | 'color-dodge' | 'color-burn' | 'hard-light' | 'soft-light';
+declare type WidthSign = 'positive' | 'negative';
+declare type IdenticonSettings = {
+    size: number;
+    baseSeed: string;
+    font: string;
+    fontStyle: string;
+    fontSize: number;
+    backgroundColours: string[];
+    initialsColours: string[];
+    initialsOffset: vec;
+    initialsAlpha: number;
+    initialsCompositeOperation: CompositeOperation;
+    stripeColours: string[];
+    stripeAlpha: number;
+    stripeCompositeOperation: CompositeOperation;
+    stripes: [number, number];
+    stripeWidth: [number, number];
+    stripeDeviation: [number, number];
+    curveAmount: [number, number];
+    curveOffset: [number, number];
+    startWidthSign: WidthSign[];
+    endWidthSign: WidthSign[];
+};
+export declare function identicon(name: string, settings?: Partial<IdenticonSettings>): HTMLCanvasElement;
+export {};

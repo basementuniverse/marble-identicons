@@ -1,0 +1,91 @@
+<style>
+  body {
+    background-color: #2f4050;
+  }
+
+  .output canvas {
+    margin: 20px;
+    border-radius: 50%;
+    border: 2px white solid;
+  }
+</style>
+<script src="build/identicon.js"></script>
+<div class="output"></div>
+<script>
+  const names = [
+    "Kenneth Dupont",
+    "Rabia Bautista",
+    "Judah Haigh",
+    "Kaine Mccray",
+    "Karim Jacobs",
+    "Kishan Guest",
+    "Aleyna Rangel",
+    "Enrique Mackenzie",
+    "Aneeka Devine",
+    "Christopher O'Gallagher",
+    "Aviana Navarro",
+    "Ivie Norman",
+    "Lacie-Mae Edwards",
+    "Ariadne Adams",
+    "Holli Cornish",
+    "Jon Willis-Kennedy",
+    "Briana Carter",
+    "Trystan Spears",
+    "Eliot Spence",
+    "Remy Lovell",
+    "Salim Little",
+    "Lillie-Rose Santiago",
+    "Mikael Jefferson",
+    "Uma Robinson",
+    "Ibraheem Charlton",
+    "Akash Farmer",
+    "Rehaan Mcarthur",
+    "Antony Marsh",
+    "Alexandre Benson",
+    "Vincent Bostock",
+    "Alena Spence",
+    "Shreya Waller",
+    "Milosz Tait",
+    "Valentina Sheppard",
+    "Huseyin Thatcher",
+    "Katelin Good",
+    "Rosie Ortiz",
+    "Bailey Haigh",
+    "Ehsan Gunn",
+    "Rafferty Kennedy",
+    "Harlow Ellison",
+    "Isla-Mae Daugherty",
+    "Aronas George",
+    "Lori Shields",
+    "Nichola Serrano",
+    "Lydia Miles",
+    "Leah Prentice",
+    "Jamil Lang",
+    "Kelsie Daugherty",
+    "Phillipa Cleveland",
+    "Tommy-Lee Fry",
+    "Maha Oconnell",
+    "Amar Burke",
+    "Mae Gordon",
+    "Aled Hulme",
+    "Ashlea Milne",
+    "Federico Allison",
+    "Umaima Salt",
+    "Bayley Castillo",
+  ];
+
+  const output = document.querySelector(".output");
+  const settings = {
+    size: 32,
+    initialsColours: [
+      '#2f4050',
+    ],
+  };
+
+  function createIdenticon(name) {
+    output.appendChild(identicon(name, settings));
+  }
+  for (const name of names) {
+    createIdenticon(name);
+  }
+</script>

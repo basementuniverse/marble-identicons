@@ -1,0 +1,6 @@
+src/
+.editorconfig
+.gitignore
+examples.htm
+tsconfig.json
+webpack.config.js
