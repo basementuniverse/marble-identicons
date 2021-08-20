@@ -2,7 +2,8 @@
   "name": "@basementuniverse/marble-identicons",
   "version": "0.1.0",
   "description": "Generate marble-style identicons",
-  "main": "build/index.js",
+  "main": "build/identicon.js",
+  "types": "build/index.d.ts",
   "scripts": {
     "build": "webpack"
   },

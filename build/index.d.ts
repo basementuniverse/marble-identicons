@@ -1,11 +1,12 @@
 import { vec } from '@basementuniverse/commonjs';
 declare type CompositeOperation = 'source-over' | 'lighter' | 'multiply' | 'screen' | 'overlay' | 'color-dodge' | 'color-burn' | 'hard-light' | 'soft-light';
+declare type FontStyle = '' | 'normal' | 'italic' | 'bold';
 declare type WidthSign = 'positive' | 'negative';
 declare type IdenticonSettings = {
     size: number;
     baseSeed: string;
     font: string;
-    fontStyle: string;
+    fontStyle: FontStyle;
     fontSize: number;
     backgroundColours: string[];
     initialsColours: string[];

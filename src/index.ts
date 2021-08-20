@@ -11,13 +11,15 @@ type CompositeOperation = 'source-over'
   | 'hard-light'
   | 'soft-light';
 
+type FontStyle = '' | 'normal' | 'italic' | 'bold';
+
 type WidthSign = 'positive' | 'negative';
 
 type IdenticonSettings = {
   size: number;
   baseSeed: string;
   font: string;
-  fontStyle: string;
+  fontStyle: FontStyle;
   fontSize: number;
   backgroundColours: string[];
   initialsColours: string[];
@@ -56,10 +58,7 @@ const defaultIdenticonSettings: IdenticonSettings = {
   initialsColours: [
     '#ffffff',
   ],
-  initialsOffset: {
-    x: 0,
-    y: 2,
-  },
+  initialsOffset: vec(),
   initialsAlpha: 1,
   initialsCompositeOperation: 'source-over',
   stripeColours: [

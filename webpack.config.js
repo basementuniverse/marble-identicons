@@ -23,6 +23,7 @@ module.exports = {
     library: {
       type: 'window',
     },
+    libraryTarget: 'umd',
   },
   performance: {
     hints: false,
