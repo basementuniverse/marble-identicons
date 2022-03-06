@@ -96,6 +96,11 @@ export function identicon(
     settings
   );
 
+  // Make sure name is a string, default to "Anonymous User"
+  if (!name || typeof name !== 'string') {
+    name = 'Anonymous';
+  }
+
   // Get name initials
   const initials = name
     .split(/[\s\-']/)
