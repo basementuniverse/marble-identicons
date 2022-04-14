@@ -1,4 +1,6 @@
 src/
+design/
+prototypes/
 .editorconfig
 .gitignore
 examples.htm
